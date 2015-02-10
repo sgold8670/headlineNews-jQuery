@@ -12,7 +12,7 @@ $(document).ready(function(){
 		 $.getJSON(url,
 		    function(data){
 			  for (i=0; i<data.articles.length; i++) {
-					var link = '<li><div class="line-margin"><div class="list-group"><a href="' + data.articles[i].url + '" class="list-group-item"><h4>' + data.articles[i].title + '</h4><p>' + data.articles[i].summary + '</p></a></div></div></li>';
+					var link = '<li><div class="line-margin"><div class="list-group"><a href="' + data.articles[i].url + '" class="list-group-item"><h4>' + data.articles[i].title + '</h4><p>' + data.articles[i].summary + '...<span class="readMore">read more</span></p></a></div></div></li>';
 					//append data to news div
 					$("#info").append(link);
 			   }// end of for loop
@@ -32,7 +32,7 @@ $(document).ready(function(){
 		 $.getJSON(url,
 		    function(data){
 			  for (i=0; i<data.articles.length; i++) {
-					var link = '<li><div class="line-margin"><div class="list-group"><a href="' + data.articles[i].url + '" class="list-group-item"><h4>' + data.articles[i].title + '</h4><p>' + data.articles[i].summary + '</p></a></div></div></li>';
+					var link = '<li><div class="line-margin"><div class="list-group"><a href="' + data.articles[i].url + '" class="list-group-item"><h4>' + data.articles[i].title + '</h4><p>' + data.articles[i].summary + '...<span class="readMore">read more</span></p></a></div></div></li>';
 					//append data to news div
 					$("#info").append(link);
 			   }// end of for loop
@@ -52,7 +52,7 @@ $(document).ready(function(){
 		 $.getJSON(url,
 		    function(data){
 			  for (i=0; i<data.articles.length; i++) {
-					var link = '<li><div class="line-margin"><div class="list-group"><a href="' + data.articles[i].url + '" class="list-group-item"><h4>' + data.articles[i].title + '</h4><p>' + data.articles[i].summary + '</p></a></div></div></li>';
+					var link = '<li><div class="line-margin"><div class="list-group"><a href="' + data.articles[i].url + '" class="list-group-item"><h4>' + data.articles[i].title + '</h4><p>' + data.articles[i].summary + '...<span class="readMore">read more</span></p></a></div></div></li>';
 					//append data to news div
 					$("#info").append(link);
 			   }// end of for loop
